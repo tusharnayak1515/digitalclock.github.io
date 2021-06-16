@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Pangolin&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    min-height: 100vh;
+}
+
+.container {
+    height: 45vmin;
+    width: 75vmin;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 24vh;
+    margin: auto;
+    border: 6px solid rgba(8, 0, 0, 0.575);
+    border-radius: 14%;
+    background-color: rgb(73, 70, 70);
+}
+
+#clock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: black;
+    height: 35vmin;
+    width: 65vmin;
+    border: 3px solid rgb(78, 5, 78);
+    border-radius: 10%;
+    color: white;
+    /* font-size: 10vmin; */
+}
+
+#clock .getDate {
+    font-size: 3vw;
+    font-weight: lighter;
+    font-family: 'Mate SC', serif;
+}
+
+#clock .getTime {
+    font-size: 4.8vw;
+    font-weight: bold;
+    font-family: 'Pangolin', cursive;
+}
+
+#clock .weekDay {
+    font-size: 3vw;
+    font-weight: lighter;
+    font-family: 'Mate SC', serif;
+}
+
+/* Media Queries  */
+
+@media only screen and (max-width: 480px) {
+
+    .container {
+        height: 47vmin;
+        width: 75vmin;
+        top: 24vh;
+    }
+
+    #clock {
+        height: 35vmin;
+        width: 65vmin;
+        font-size: 10vmin;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    .container {
+        height: 40vmin;
+        width: 65vmin;
+        top: 25vh;
+    }
+
+    #clock {
+        height: 30vmin;
+        width: 55vmin;
+        font-size: 9vmin;
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .container {
+        height: 40vmin;
+        width: 70vmin;
+        top: 26vh;
+    }
+
+    #clock {
+        height: 30vmin;
+        width: 60vmin;
+        font-size: 9.5vmin;
+    }
+
+}
