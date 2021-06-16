@@ -63,27 +63,27 @@ body {
 @media only screen and (max-width: 480px) {
 
     .container {
-        height: 40vw;
-        width: 60vw;
+        height: 48vw;
+        width: 78vw;
         top: 24vh;
     }
 
     #clock {
-        height: 30vw;
-        width: 50vw;
+        height: 38vw;
+        width: 70vw;
         font-size: 10vw;
     }
 
     #clock .getDate {
-        font-size: 5vw;
+        font-size: 8vw;
     }
 
     #clock .getTime {
-        font-size: 8vw;
+        font-size: 11vw;
     }
     
     #clock .weekDay {
-        font-size: 5vw;
+        font-size: 8vw;
     }
 
 }
