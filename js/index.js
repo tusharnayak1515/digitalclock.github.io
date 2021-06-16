@@ -14,19 +14,19 @@ function getTime() {
     let bodyBg = document.body;
 
     if( (hours >=6 ) && (hours < 12) ) {
-        bodyBg.style.background = "url('../img/bg-1.jpg') center/cover no-repeat";
+        bodyBg.style.background = "url('img/bg-1.jpg') center/cover no-repeat";
     }
 
     else if( (hours >=12 ) && (hours < 18) ) {
-        bodyBg.style.background = "url('../img/bg-2.jpg') center/cover no-repeat";
+        bodyBg.style.background = "url('img/bg-2.jpg') center/cover no-repeat";
     }
 
     else if( (hours >=18 ) && (hours <= 24) ) {
-        bodyBg.style.background = "url('../img/bg-3.jpg') center/cover no-repeat";
+        bodyBg.style.background = "url('img/bg-3.jpg') center/cover no-repeat";
     }
 
-    else if( (hours >0 ) && (hours < 6) ) {
-        bodyBg.style.background = "url('../img/bg-3.jpg') center/cover no-repeat";
+    else if( (hours >=0 ) && (hours < 6) ) {
+        bodyBg.style.background = "url('img/bg-3.jpg') center/cover no-repeat";
     }
 
     if(hours === 0) {
