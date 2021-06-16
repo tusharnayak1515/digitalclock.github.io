@@ -12,15 +12,15 @@ body {
 }
 
 .container {
-    height: 45vmin;
-    width: 75vmin;
+    height: 28vw;
+    width: 40vw;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     top: 24vh;
     margin: auto;
-    border: 6px solid rgba(8, 0, 0, 0.575);
+    border: 0.5vw solid rgba(8, 0, 0, 0.575);
     border-radius: 14%;
     background-color: rgb(73, 70, 70);
 }
@@ -32,28 +32,28 @@ body {
     align-items: center;
     position: absolute;
     background-color: black;
-    height: 35vmin;
-    width: 65vmin;
+    height: 22vw;
+    width: 35vw;
     border: 3px solid rgb(78, 5, 78);
     border-radius: 10%;
     color: white;
-    /* font-size: 10vmin; */
+    /* font-size: 10vw; */
 }
 
 #clock .getDate {
-    font-size: 3vw;
+    font-size: 4vw;
     font-weight: lighter;
     font-family: 'Mate SC', serif;
 }
 
 #clock .getTime {
-    font-size: 4.8vw;
+    font-size: 6vw;
     font-weight: bold;
     font-family: 'Pangolin', cursive;
 }
 
 #clock .weekDay {
-    font-size: 3vw;
+    font-size: 4vw;
     font-weight: lighter;
     font-family: 'Mate SC', serif;
 }
@@ -63,15 +63,27 @@ body {
 @media only screen and (max-width: 480px) {
 
     .container {
-        height: 47vmin;
-        width: 75vmin;
+        height: 40vw;
+        width: 60vw;
         top: 24vh;
     }
 
     #clock {
-        height: 35vmin;
-        width: 65vmin;
-        font-size: 10vmin;
+        height: 30vw;
+        width: 50vw;
+        font-size: 10vw;
+    }
+
+    #clock .getDate {
+        font-size: 5vw;
+    }
+
+    #clock .getTime {
+        font-size: 8vw;
+    }
+    
+    #clock .weekDay {
+        font-size: 5vw;
     }
 
 }
@@ -79,31 +91,54 @@ body {
 @media only screen and (min-width: 481px) and (max-width: 768px) {
 
     .container {
-        height: 40vmin;
-        width: 65vmin;
+        height: 38vw;
+        width: 60vw;
         top: 25vh;
     }
 
     #clock {
-        height: 30vmin;
-        width: 55vmin;
-        font-size: 9vmin;
+        height: 28vw;
+        width: 50vw;
+        font-size: 9vw;
     }
 
+    #clock .getDate {
+        font-size: 5vw;
+    }
+
+    #clock .getTime {
+        font-size: 8vw;
+    }
+    
+    #clock .weekDay {
+        font-size: 5vw;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
     .container {
-        height: 40vmin;
-        width: 70vmin;
+        height: 32vw;
+        width: 48vw;
         top: 26vh;
     }
 
     #clock {
-        height: 30vmin;
-        width: 60vmin;
-        font-size: 9.5vmin;
+        height: 25vw;
+        width: 42vw;
+        font-size: 9.5vw;
+    }
+
+    #clock .getDate {
+        font-size: 4vw;
+    }
+
+    #clock .getTime {
+        font-size: 7vw;
+    }
+    
+    #clock .weekDay {
+        font-size: 4vw;
     }
 
 }
